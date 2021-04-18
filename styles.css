@@ -1,0 +1,162 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: fit-content;
+    font-family: 'Libre Franklin', 'Arial Narrow', sans-serif;
+}
+
+p, span {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+span {
+    font-weight: 300;
+}
+
+.content-wrapper {
+    padding: 50px 60px;
+}
+
+.head {
+    padding: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 68px;
+    color: rgb(0, 30, 44);
+    font-weight: 700;
+}
+
+.main-container {
+    border-top: 5px solid rgb(0, 30, 44);
+}
+
+div.contact-details {
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+
+}
+.contact-tabs {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    text-align: center;
+    align-items: center;
+}
+
+.contact-tabs h3 {
+    background:rgb(3, 67, 97);
+    color: white;
+    padding: 2px 5px;
+}
+
+.contact-tabs span {
+    padding: 0px 5px;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.body {
+    border-top: 5px solid rgb(192, 219, 231);
+    border-bottom: 10px solid rgb(192, 219, 231);
+    padding: 20px 0px;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: fit-content;
+}
+
+.body h3 {
+    color:rgb(0, 30, 44);
+    text-transform: uppercase;
+    width: 100%;
+    padding: 5px 20px;
+    font-size: 2em;
+    border-bottom: 2px solid rgb(0, 30, 44);
+    margin: 10px 0px;
+}
+
+.body h4 {
+    color:rgb(0, 30, 44);
+    font-size: 1.55em;
+}
+
+.body h4 span {
+    font-weight: 400;
+}
+
+.left {
+    width: 66%;
+}
+
+.left-content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.left-content p {
+    padding: 0px 20px;
+    font-size: 1.3em;
+    color: gray;
+}
+
+li {
+    font-size: 1.3em;
+    color: gray;
+    margin: 10px;
+}
+
+.left-content li {
+    margin-left: 90px;
+}
+
+.right {
+    width: 32%;
+    background: rgb(192, 219, 231);
+    padding: 20px;
+    padding-top: 0px;
+
+}
+
+.right h3 {
+    border: none;
+    padding: 0px;
+}
+
+.right-content h4 {
+    padding-top: 30px;
+    color: rgb(68, 68, 68);
+}
+
+a {
+    text-decoration: none;
+    color:rgb(68, 68, 68)
+}
+
+.right-content h4.degree {
+    padding-top: 5px;
+}
+
+.right-content span {
+    font-size: 1.5em;
+    color: rgb(68, 68, 68);
+}
+
+.skills-wrapper {
+    margin-top: 40px;
+}
+
+.right-content li {
+    margin-left: 70px;
+}
+
