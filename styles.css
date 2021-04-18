@@ -60,7 +60,7 @@ div.contact-details {
 
 .contact-tabs span {
     padding: 0px 5px;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 400;
 }
 
@@ -160,3 +160,53 @@ a {
     margin-left: 70px;
 }
 
+@media screen and (max-width: 1210px) {
+    div.contact-details {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .body {
+        flex-direction: row;
+    }
+    .left {
+        width: 60%;
+    }
+    .right {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    div.content-wrapper {
+        padding: 30px;
+    }
+    .head {
+        padding: 10px;
+        font-size: 3.2em;
+    }
+    .left {
+        width: 50%;
+    }
+    .right {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .body {
+        flex-direction: column-reverse;
+    }
+    .head {
+        padding: 10px;
+        font-size: 3.2em;
+    }
+    .left {
+        width: 100%;
+    }
+    .right {
+        width: 100%;
+    }
+}
