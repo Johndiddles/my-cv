@@ -168,6 +168,12 @@ a {
 }
 
 @media screen and (max-width: 900px) {
+    body {
+        padding: 0px;
+    }
+    .content-wrapper {
+        padding: 0px;
+    }
     .body {
         flex-direction: row;
     }
@@ -196,17 +202,67 @@ a {
 }
 
 @media screen and (max-width: 600px) {
+    .head {
+        padding: 0px;
+    }
+    div.content-wrapper {
+        padding: 5px;
+    }
+    div.contact-details {
+        justify-content: flex-start;
+    }
+    .contact-tabs span {
+        font-size: 1em;
+    }
+    .main-container {
+        width: 100%;
+        padding: 0px;
+    }
     .body {
         flex-direction: column-reverse;
+        padding: 0px;
     }
     .head {
-        padding: 10px;
-        font-size: 3.2em;
+        padding: 0px;
+        font-size: 2.0em;
     }
     .left {
         width: 100%;
     }
+    .left-content p {
+        font-size: 1em;
+    }
+    .left-content span {
+        font-size: 1em;
+    }
+    .left-content li {
+        font-size: 1em;
+    }
+    .left-content h3 {
+        font-size: 1.6em;
+    }
+    .left-content h4 {
+        font-size: 1.3em;
+    }
     .right {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .right-content p {
+        font-size: 1em;
+    }
+    .right-content span {
+        font-size: 1em;
+    }
+
+    .right-content li {
+        font-size: 1em;
+    }
+    .right-content h3 {
+        font-size: 1.6em;
+    }
+    .right-content h4 {
+        font-size: 1.3em;
     }
 }
