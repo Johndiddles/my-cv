@@ -1,1 +1,3 @@
-console.log('My name is John Adepelumi')
+const name = document.getElementById('name');
+
+console.log('My name is ' + name + '.')
