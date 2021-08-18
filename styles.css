@@ -176,13 +176,15 @@ a {
 .right-content li {
     margin-left: 70px;
 }
+.bottom-reference {
+    display: none;
+}
 
 @media screen and (max-width: 1210px) {
     div.contact-details {
         flex-wrap: wrap;
         justify-content: center;
     }
-}
 
 @media screen and (max-width: 900px) {
     body {
