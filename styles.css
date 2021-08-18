@@ -22,7 +22,7 @@ span {
     padding: 50px 60px;
 }
 
-.head {
+.head, .head .span {
     padding: 30px;
     text-transform: uppercase;
     text-align: center;
