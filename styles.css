@@ -22,7 +22,16 @@ span {
     padding: 50px 60px;
 }
 
-.head, .head .span {
+.head {
+    padding: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 68px;
+    color: rgb(0, 30, 44);
+    font-weight: 700;
+}
+
+.fullname {
     padding: 30px;
     text-transform: uppercase;
     text-align: center;
