@@ -34,7 +34,9 @@ span {
 .main-container {
     border-top: 5px solid rgb(0, 30, 44);
 }
-
+.experience-wrapper {
+    margin: 2em 0px;
+}
 div.contact-details {
     padding: 20px 0px;
     display: flex;
@@ -88,10 +90,25 @@ div.contact-details {
 .body h4 {
     color:rgb(0, 30, 44);
     font-size: 1.55em;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0.5em 0px;
+}
+
+.body h4 a {
+
+}
+
+.body h4 a img {
+    max-height: 40px;
+    border-radius: 10px;
+    margin-right: 1em;
 }
 
 .body h4 span {
     font-weight: 400;
+    margin: 0 10px;
 }
 
 .left {
@@ -219,7 +236,7 @@ a {
         padding: 0px;
     }
     .body {
-        flex-direction: column-reverse;
+        flex-direction: column;
         padding: 0px;
     }
     .head {
@@ -264,5 +281,11 @@ a {
     }
     .right-content h4 {
         font-size: 1.3em;
+    }
+    .references {
+        display: none;
+    }
+    .bottom-reference {
+        display: block;
     }
 }
