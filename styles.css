@@ -3,9 +3,14 @@
     padding: 0px;
     box-sizing: border-box;
 }
+:root {
+    --light-text: rgba(240, 240, 240, 0.925);
+    --gray-text: rgb(192, 192, 192);
+    --dark-blue-text: rgb(0, 30, 44);
+}
 
 body {
-    width: 100vw;
+    width: 100%;
     height: fit-content;
     font-family: 'Libre Franklin', 'Arial Narrow', sans-serif;
 }
@@ -17,22 +22,50 @@ p, span {
 span {
     font-weight: 300;
 }
-
+a {
+    text-decoration: none;
+    color:rgb(68, 68, 68);
+}
 .content-wrapper {
-    padding: 50px 60px;
+    padding: 20px 60px;
+}
+
+@keyframes name {
+    0%   {right: 100vw;}
+    100%   {right: 0vw;}
+}
+
+@keyframes upward {
+    50%   {top: 100vh;}
+    100%   {top: 0vh;}
+}
+
+@keyframes right-to-left {
+    0%   {left: 100vw;}
+    100%   {left: 0vw;}
 }
 
 .head {
-    padding: 30px;
     text-transform: uppercase;
     text-align: center;
     font-size: 68px;
     color: rgb(0, 30, 44);
     font-weight: 700;
+    position: relative;
+    animation-name: name;
+    animation-duration:0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 15px;
 }
 
+.profile-picture {
+    border-radius: 50%;
+    width: 100px;
+    box-shadow: 0px 0px 5px rgb(0, 30, 44);
+}
 .fullname {
-    padding: 30px;
     text-transform: uppercase;
     text-align: center;
     font-size: 68px;
@@ -46,19 +79,22 @@ span {
 .experience-wrapper {
     margin: 2em 0px;
 }
-div.contact-details {
+.contact-details {
     padding: 20px 0px;
     display: flex;
-    flex-direction: row;
     width: 100%;
     justify-content: space-around;
-
+    position: relative;
+    animation-name: right-to-left;
+    animation-duration: 1.4s;
+    /* animation-delay: 2s; */
 }
 .contact-tabs {
     width: fit-content;
     display: flex;
     flex-direction: row;
     padding: 5px;
+    position: relative;
     text-align: center;
     align-items: center;
 }
@@ -75,6 +111,20 @@ div.contact-details {
     font-weight: 400;
 }
 
+.portfolio {
+    border: 2px solid rgb(0, 30, 44);
+    border-radius: 20px;
+    padding: 0.6em 1em;
+}
+
+.portfolio:hover {
+    background: rgb(0, 30, 44);
+    color: white;
+}
+.portfolio:hover span a {
+    color: var(--light-text);
+
+}
 .body {
     border-top: 5px solid rgb(192, 219, 231);
     border-bottom: 10px solid rgb(192, 219, 231);
@@ -84,6 +134,7 @@ div.contact-details {
     flex-direction: row;
     justify-content: space-between;
     height: fit-content;
+    width: 100%;
 }
 
 .body h3 {
@@ -119,6 +170,9 @@ div.contact-details {
 
 .left {
     width: 66%;
+    position: relative;
+    animation-name: upward;
+    animation-duration: 3s;
 }
 
 .left-content {
@@ -145,26 +199,28 @@ li {
 
 .right {
     width: 32%;
-    background: rgb(192, 219, 231);
+    background: rgb(0, 30, 44);
     padding: 20px;
     padding-top: 0px;
-
+    position: relative;
+    animation-name: upward;
+    animation-duration: 2s;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(196, 196, 196);
 }
 
 .right h3 {
     border: none;
     padding: 0px;
+    color: var(--light-text);
 }
 
 .right-content h4 {
     padding-top: 30px;
-    color: rgb(68, 68, 68);
+    color: var(--light-text);
 }
 
-a {
-    text-decoration: none;
-    color:rgb(68, 68, 68)
-}
+
 
 .right-content h4.degree {
     padding-top: 5px;
@@ -173,7 +229,7 @@ a {
 
 .right-content span {
     font-size: 1.5em;
-    color: rgb(68, 68, 68);
+    color: var(--gray-text);
 }
 
 .skills-wrapper {
@@ -182,6 +238,7 @@ a {
 
 .right-content li {
     margin-left: 70px;
+    color: var(--light-text);
 }
 .bottom-reference {
     display: none;
@@ -195,7 +252,7 @@ a {
 
 @media screen and (max-width: 900px) {
     body {
-        padding: 0px;
+        padding: 10px;
     }
     .content-wrapper {
         padding: 0px;
