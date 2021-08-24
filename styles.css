@@ -200,9 +200,10 @@ li {
 .portfolios{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .project {
-    width: 30%;
+    width: 240px;
     border: 1px solid;
     border-radius: 10px;
     height: 240px;
@@ -210,7 +211,13 @@ li {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    margin: 10px;
 }
+
+.bottom-reference .portfolios{
+    justify-content: center;
+}
+
 
 .preview {
     width: 100%;
