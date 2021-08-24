@@ -27,7 +27,7 @@ a {
     color:rgb(68, 68, 68);
 }
 .content-wrapper {
-    padding: 20px 60px;
+    padding: 20px 1vw;
 }
 
 @keyframes name {
@@ -250,7 +250,7 @@ li {
         justify-content: center;
     }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 960px) {
     body {
         padding: 10px;
     }
