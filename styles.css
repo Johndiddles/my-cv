@@ -197,6 +197,31 @@ li {
     margin-left: 90px;
 }
 
+.portfolios{
+    display: flex;
+    justify-content: space-between;
+}
+.project {
+    width: 30%;
+    border: 1px solid;
+    border-radius: 10px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.preview {
+    width: 100%;
+    background: rgb(0, 30, 44);
+    padding: 1em;
+    color: rgba(240, 240, 240, 0.925);
+    text-align: center;
+    font-weight: 600;
+}
+
+
 .right {
     width: 32%;
     background: rgb(0, 30, 44);
